@@ -1,60 +1,16 @@
 export interface Country {
     name: any;
-    flags:any;
-    maps:any;
-    topLevelDomain: string[];
-    alpha2Code: string;
-    alpha3Code: string;
-    callingCodes: string[];
+    flags: any;
     capital: string;
-    altSpellings: string[];
     region: string;
-    subregion: string;
     population: number;
-    latlng: number[];
-    demonym: string;
     area: number;
-    gini: number;
-    timezones: string[];
     borders: string[];
-    nativeName: string;
-    numericCode: string;
-    currencies: Currency[];
-    languages: Language[];
-    translations: Translations;
-    flag: string;
-    regionalBlocs: RegionalBloc[];
-    cioc: string;
-  }
-  
-  export interface Currency {
-    pol: any;
-    code: string;
-    name: string;
-    symbol: string;
-  }
 
-  
-  
-  export interface Language {
-    
-    name: string
-    pol: string;
+    // typy ktore sa w api i moga byc wykorzystane w country-about jako user. np name - user.name itp...
   }
   
-  export interface RegionalBloc {
-    acronym: string;
-    name: string;
-    otherAcronyms: string[];
-    otherNames: string[];
-  }
+ 
   
-  export interface Translations {
-    de: string;
-    es: string;
-    fr: string;
-    ja: string;
-    it: string;
-    br: string;
-    pt: string;
-  }
+  
+  

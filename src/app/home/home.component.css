@@ -42,8 +42,8 @@ input{
 
 header{
     background-color: rgb(20, 20, 20);
-    height: 92vh;
-    max-height: 92vh;
+    height: 120vh;
+    max-height: 120vh;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -93,6 +93,21 @@ div button{
     cursor: pointer;
 }
 
+.logo-container{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.top .logo-container a{
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+
 
 
 
@@ -101,5 +116,14 @@ div button{
         max-height: 400vh;
         height: 350vh;
         
+    }
+
+    .top .logo-container a{
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+
+    .search-hero label{
+        font-size: 1rem;
     }
 }

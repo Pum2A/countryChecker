@@ -16,12 +16,13 @@ Math: any;
 
 
 randomNumber = Math.floor(Math.random() * 10);
-
+// losowa liczba do 10
   constructor(private userData: MyCountryDataService) {}
   ngOnInit(): void {
     this.userData.users().subscribe((data) =>{
        this.users = data;
-       
+        
+       // podlaczenie sie do api 
        
     })
   }

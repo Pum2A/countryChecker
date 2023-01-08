@@ -1,46 +1,48 @@
 <div class="top">
-    <div class="search-container">
-      <div class="search-hero">
-        <label for="search-hero">SEARCH YOUR COUNTRY</label>
-        <input type="text" name="search-hero" [(ngModel)]="searchText" placeholder="Search" class="search">
-      </div>
+  <div class="search-container">
+    <div class="search-hero">
+      <label for="search-hero">SEARCH YOUR COUNTRY</label>
+      <input
+        type="text"
+        name="search-hero"
+        [(ngModel)]="searchText"
+        placeholder="Search"
+        class="search"
+      />
     </div>
+    <div class="logo-container">
+      <a href="#">Country Checker</a>
+    </div>
+  </div>
 </div>
 <header>
-    <ul *ngFor="let user of users | filter:searchText,  let i = index;  ">
-        
-      <li *ngIf="i < randomNumber; " >
-        <img src="{{user.flags.png}}" alt="" height="200" width="250"> 
-        
-        
-      </li>
-      <li *ngIf="i < randomNumber;" class="flagContent"  >
-        <p >Country:  
-          {{user.name.common}}
-        </p>
-        <p>
-          Capital:
-          {{user.capital}}
-        </p>
-        <p>
-          Population:
-          <span class="peopleCounter">
-            {{user.population | number:'1.0' }} people
-          </span>
-        </p>
-        
-        <p>
-          Region:
-          {{user.region}}
-        </p>
-        <div>
-          <button [routerLink]="'/' + user.name.common">About Country</button>
-        </div>
-        
-        
-      </li>
-    </ul>
+  <ul *ngFor="let user of users | filter : searchText; let i = index">
+    <li *ngIf="i < randomNumber">
+      <img src="{{ user.flags.png }}" alt="" height="200" width="250" />
+    </li>
+    <li *ngIf="i < randomNumber" class="flagContent">
+      <p>
+        Country:
+        {{ user.name.common }}
+      </p>
+      <p>
+        Capital:
+        {{ user.capital }}
+      </p>
+      <p>
+        Population:
+        <span class="peopleCounter">
+          {{ user.population | number : "1.0" }} people
+        </span>
+      </p>
 
-
-    
-  </header> 
+      <p>
+        Region:
+        {{ user.region }}
+      </p>
+      <div>
+        <button [routerLink]="'/' + user.name.common">About Country</button>
+      </div>
+    </li>
+  </ul>
+</header>
