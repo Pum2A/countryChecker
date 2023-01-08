@@ -1,5 +1,88 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+.top{
+    background-color: rgb(15, 15, 15);
+    height: 8vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(12, 12, 12);
 }
+
+.search-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 50px;
+    height: 8vh;
+}
+.search-hero{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+.search-hero label{
+    color: #fff;
+    margin: 5px 25px;
+    font-size: 1.2rem;
+}
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.4rem;
+    outline: none;
+    border: none;
+}
+.search::placeholder{
+    font-size: 16px;
+    color: rgb(31, 29, 29);
+    text-align: start;
+    padding: 5px;
+}
+
+header{
+    background-color: rgb(20, 20, 20);
+    height: 92vh;
+    max-height: 92vh;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+    gap: 50px;
+}
+ul{
+    max-height: 350px;
+    width: 400px;
+    color: #fff;
+    list-style: none;
+    
+}
+li{
+   
+    
+}
+.flagContent{
+   width: 400px;
+   display: block;
+
+}
+
+.peopleCounter{
+    letter-spacing: 2px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: left;
+
+}
+
+.button-container button{
+    margin: 10px 0px;
+    height: 2rem;
+    width: 10rem;
+}
+
+
+
+

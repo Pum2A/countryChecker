@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
-import { map } from 'rxjs';
+
 import { MyCountryDataService } from '../my-country-data.service';
 
 
@@ -13,13 +13,14 @@ export class HomeComponent implements OnInit {
   users:any;
 Math: any;
 
-randomNumber = Math.floor(Math.random() * 15) + 5;
+
+
+randomNumber = Math.floor(Math.random() * 10);
 
   constructor(private userData: MyCountryDataService) {}
   ngOnInit(): void {
     this.userData.users().subscribe((data) =>{
        this.users = data;
-       console.warn(data);
        
        
     })

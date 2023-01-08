@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModel } from '@angular/forms';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -24,7 +27,8 @@ import { CustomFilterPipe } from './custom-filter-pipe.pipe';
     HttpClientModule,
     FormsModule,
     BrowserModule,
-    
+    RouterModule,
+    CommonModule,
 
   ],
   providers: [],

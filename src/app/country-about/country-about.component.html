@@ -1,1 +1,47 @@
-<p>country-about works!</p>
+<div class="top">
+    <div class="search-container">
+        <span routerLink="/home">BACK TO HOME</span>
+    </div>
+</div>
+<header>
+
+  <div *ngIf="country$ | async; let user  ">
+    <img src="{{user.flags.png}}" alt="" height="200" width="250"> 
+    <p >Country:  
+      {{user.name.common}}
+    </p>
+    <p>
+      Official name:
+      {{user.name.official}}
+    </p>
+    <p>
+      Capital:
+      {{user.capital}}
+    </p>
+    <p>
+      Population:
+      <span class="peopleCounter">
+        {{user.population | number:'1.0' }} people
+      </span>
+    </p>
+    
+    <p>
+      Region:
+      {{user.region}}
+    </p>
+    <p>
+      Borders:
+      {{user.borders || 'none'}}
+    </p>
+    <p>
+      Area:
+      {{user.area}} km2
+    </p>
+
+    
+      
+    
+    </div>
+
+ 
+</header>
